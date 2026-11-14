@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Removedor de Verrugas y Lunares de Carne | Envío Gratis a Toda Venezuela</title>
+  <meta name="description" content="Tratamiento líquido concentrado con fórmula natural para secar verrugas y lunares de carne del cuello y cuerpo. Paga al recibir en toda Venezuela.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Shopify DTC Standard (DM Sans + Playfair Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandNavy: '#0f172a',
+            brandBlue: '#1e3a8a',
+            brandGreen: '#059669',
+            brandGreenDark: '#047857',
+            brandGold: '#f59e0b',
+            brandBg: '#f8fafc',
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #334155;
+      font-family: 'DM Sans', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Botón Dorado Glow (El del Navbar que le gustó al usuario) */
+    .btn-gold-glow {
+      border: 2px solid #fbbf24;
+      box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.4), 0 8px 18px rgba(245, 158, 11, 0.35);
+      animation: goldPulse 2.2s infinite;
+    }
+    @keyframes goldPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.4), 0 6px 14px rgba(245, 158, 11, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 0 5px rgba(251, 191, 36, 0.15), 0 10px 22px rgba(245, 158, 11, 0.5);
+      }
+    }
+
+    /* Botón Verde Esmeralda con Borde Dorado */
+    .btn-green-gold-border {
+      background-color: #059669;
+      color: #ffffff;
+      border: 2px solid #fcd34d;
+      box-shadow: 0 0 0 2px rgba(252, 211, 77, 0.45), 0 10px 22px -3px rgba(5, 150, 105, 0.45);
+      transition: all 0.2s ease;
+    }
+    .btn-green-gold-border:hover {
+      background-color: #047857;
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 3px rgba(252, 211, 77, 0.6), 0 14px 26px -3px rgba(5, 150, 105, 0.55);
+    }
+    .btn-green-gold-border:active {
+      transform: translateY(1px);
+    }
+
+    /* Hero con imagen de fondo rodada a la derecha y suavemente difuminada */
+    .hero-container-relative {
+      position: relative;
+      overflow: hidden;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      min-height: 250px;
+    }
+    .hero-bg-layer {
+      position: absolute;
+      top: 0;
+      right: -35px; /* Rodado hacia el borde derecho de la pantalla */
+      bottom: 0;
+      width: 65%;
+      max-width: 500px;
+      background-image: url('images/hero_banner.jpg');
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      opacity: 0.82;
+      filter: blur(0.4px);
+      pointer-events: none;
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,1) 85%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,1) 85%);
+    }
+    @media (max-width: 640px) {
+      .hero-bg-layer {
+        right: -45px; /* Más a la derecha en móviles para no tocar letras */
+        width: 60%;
+        opacity: 0.72;
+        mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.95) 80%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.95) 80%);
+      }
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="antialiased selection:bg-brandGreen selection:text-white">
+
+  <!-- CINTILLO SUPERIOR: ENVÍO 100% GRATIS Y PAGAS AL RECIBIR -->
+  <div class="bg-brandNavy text-white py-2 px-3 text-center text-xs font-semibold tracking-wide sticky top-0 z-50 shadow-sm flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span>ENVÍO 100% GRATIS A TODA VENEZUELA · PAGAS AL RECIBIR</span>
+  </div>
+
+  <!-- NAVBAR LIMPIO, EQUILIBRADO Y PERFECTAMENTE ESTRUCTURADO -->
+  <header class="border-b border-slate-100 bg-white/95 backdrop-blur z-40">
+    <div class="max-w-md mx-auto px-4 py-2 flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5 min-w-0">
+        <!-- Logotipo: Emblema botánico de precisión -->
+        <div class="w-8 h-8 rounded-lg bg-emerald-900 border border-emerald-500/50 text-emerald-300 flex items-center justify-center flex-shrink-0 shadow-xs">
+          <svg class="w-4 h-4 text-emerald-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8 7 5 10.5 5 15a7 7 0 0 0 14 0c0-4.5-3-8-7-13z"/>
+            <path d="M12 18v-4"/>
+          </svg>
+        </div>
+        <!-- Textos proporcionados a la altura del icono y del botón -->
+        <div class="flex flex-col justify-center min-w-0">
+          <span class="font-bold text-brandNavy text-[13px] sm:text-sm tracking-tight leading-tight truncate">Removedor de Verrugas</span>
+          <span class="text-[10px] text-emerald-700 font-medium tracking-normal leading-tight mt-0.5 truncate">Fórmula Natural · Wart Remover</span>
+        </div>
+      </div>
+      <!-- Botón Pedir en Navbar (Exacto a la altura óptica de 32px) -->
+      <button onclick="openModal()" class="btn-gold-glow bg-brandNavy text-amber-300 hover:text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all flex-shrink-0">
+        PEDIR 📦
+      </button>
+    </div>
+  </header>
+
+  <!-- BANNER DE CONFIANZA TOTAL (RESTAURADO CON GRADIENTE ORIGINAL) -->
+  <div class="bg-gradient-to-r from-emerald-600 via-teal-700 to-brandNavy text-white py-2.5 px-4 text-center text-xs shadow-inner">
+    <div class="max-w-md mx-auto flex items-center justify-center gap-2">
+      <span class="text-base">🛡️</span>
+      <span class="font-bold text-amber-300 uppercase tracking-wide">¡AHORA NO PAGAS NADA!</span>
+      <span class="text-slate-100">Te contactaremos por WhatsApp para confirmar antes de enviar.</span>
+    </div>
+  </div>
+
+  <!-- HERO SECTION CON IMAGEN DE FONDO RODADA A LA DERECHA Y DIFUMINADA -->
+  <section class="hero-container-relative flex items-center">
+    <!-- Capa de imagen de fondo al borde derecho -->
+    <div class="hero-bg-layer"></div>
+
+    <div class="max-w-md mx-auto px-4 pt-3 pb-5 sm:pt-4 sm:pb-7 w-full relative z-10">
+      
+      <!-- BADGE FÓRMULA NATURAL -->
+      <div class="inline-flex items-center gap-1.5 bg-emerald-100/90 border border-emerald-300 text-emerald-900 text-[10px] font-bold px-2.5 py-1 rounded-full mb-2.5 shadow-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+        <span>FÓRMULA NATURAL DE ACCIÓN RÁPIDA</span>
+      </div>
+
+      <!-- TITULAR EN LENGUAJE NATURAL (SIN TOCAR LA BOTELLA) -->
+      <h1 class="text-2xl sm:text-3xl font-extrabold text-brandNavy leading-tight mb-2 max-w-[270px]">
+        Seca y desprende verrugas y lunares del cuello <span class="text-brandGreen font-serif italic font-normal">sin dolor ni marcas</span>
+      </h1>
+
+      <!-- EXPLICACIÓN DIRECTA EN ESPAÑOL COTIDIANO -->
+      <p class="text-slate-700 text-xs sm:text-sm leading-relaxed max-w-[280px] font-medium">
+        Un suero líquido concentrado que aplicas con gotero. Deshidrata la marca desde la raíz hasta que <strong>se seca y cae sola en pocos días</strong>. Sin quemaduras y sin pagar clínicas costosas.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL MOBILE FIRST -->
+  <main class="max-w-md mx-auto px-4 py-5">
+
+    <!-- REPUTACIÓN SOCIAL REALISTA -->
+    <div class="flex items-center justify-between bg-slate-50 border border-slate-200 p-2.5 rounded-xl mb-5 text-xs">
+      <div class="flex items-center gap-1.5">
+        <span class="text-amber-500 text-sm">★★★★★</span>
+        <span class="font-bold text-slate-800">4.9 / 5</span>
+      </div>
+      <span class="text-slate-500 text-[11px] font-medium">+418 venezolanos con piel limpia</span>
+    </div>
+
+    <!-- SECCIÓN CARRUSEL TÁCTIL (SWIPE CON EL DEDO) -->
+    <div class="mb-6 bg-slate-50 border border-slate-200 rounded-2xl p-3.5 shadow-sm">
+      
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-bold text-brandNavy uppercase tracking-wider">Conoce el Producto</span>
+        <span class="text-[11px] text-slate-400 font-medium">Desliza</span>
+      </div>
+
+      <!-- CONTENEDOR TÁCTIL CON SWIPE -->
+      <div id="carousel-touch-area" class="relative bg-white rounded-xl overflow-hidden flex items-center justify-center border border-slate-100 h-72 shadow-sm select-none">
+        <img id="main-product-img" src="images/producto_gotero_vertical.jpg" alt="Foto Producto" class="max-h-full max-w-full object-contain p-2 transition-all duration-200">
+        
+        <!-- Flechas táctiles -->
+        <button onclick="prevSlide()" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/95 shadow-md text-brandNavy font-bold flex items-center justify-center text-sm border border-slate-200">
+          ‹
+        </button>
+        <button onclick="nextSlide()" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white/95 shadow-md text-brandNavy font-bold flex items-center justify-center text-sm border border-slate-200">
+          ›
+        </button>
+      </div>
+
+      <!-- MINIATURAS DEL CARRUSEL (ORDEN EXACTO SOLICITADO) -->
+      <div class="flex gap-2 mt-3 overflow-x-auto no-scrollbar py-1" id="thumbnail-container">
+        <img onclick="setSlide(0)" src="images/producto_gotero_vertical.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border-2 border-brandGreen bg-white p-0.5 flex-shrink-0">
+        <img onclick="setSlide(1)" src="images/gotero_primer_plano.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border border-slate-200 bg-white p-0.5 opacity-60 flex-shrink-0">
+        <img onclick="setSlide(2)" src="images/caja_3d.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border border-slate-200 bg-white p-0.5 opacity-60 flex-shrink-0">
+        <img onclick="setSlide(3)" src="images/frasco_aislado.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border border-slate-200 bg-white p-0.5 opacity-60 flex-shrink-0">
+        <img onclick="setSlide(4)" src="images/producto_set_blanco.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border border-slate-200 bg-white p-0.5 opacity-60 flex-shrink-0">
+        <img onclick="setSlide(5)" src="images/ingredientes_naturales.jpg" class="thumb-img w-14 h-14 rounded-lg object-cover cursor-pointer border border-slate-200 bg-white p-0.5 opacity-60 flex-shrink-0">
+      </div>
+      <div class="flex justify-center gap-1.5 mt-2" id="dots-container"></div>
+    </div>
+
+    <!-- BOTÓN DE PEDIR AHORA CON BORDE DORADO -->
+    <div class="mb-7">
+      <button onclick="openModal()" class="btn-green-gold-border w-full font-extrabold text-sm sm:text-base py-3.5 px-5 rounded-xl transition-all flex items-center justify-center gap-2">
+        <span>PEDIR AHORA · PAGO AL RECIBIR</span>
+        <span class="text-base">📦</span>
+      </button>
+      <div class="flex items-center justify-center gap-2.5 text-[11px] text-slate-500 mt-3.5 font-medium">
+        <span>🚚 Envío Gratis</span>
+        <span>·</span>
+        <span>⏱️ Llega en 48-72h</span>
+        <span>·</span>
+        <span>💵 Pagas al recibir</span>
+      </div>
+    </div>
+
+    <!-- BENEFICIOS CLAVE -->
+    <div class="grid grid-cols-2 gap-2.5 mb-6 text-xs">
+      <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+        <div class="text-base mb-1">🎯</div>
+        <div class="font-bold text-brandNavy">Gotero Milimétrico</div>
+        <p class="text-[11px] text-slate-500 mt-0.5">Aplica 1 sola gota directo en la marca sin tocar ni manchar la piel sana.</p>
+      </div>
+      <div class="p-3 rounded-xl bg-emerald-50/70 border border-emerald-200">
+        <div class="text-base mb-1">🌱</div>
+        <div class="font-bold text-emerald-900">Fórmula Natural</div>
+        <p class="text-[11px] text-emerald-700 mt-0.5">Ácido salicílico vegetal y romero. Seca de raíz sin quemaduras químicas.</p>
+      </div>
+      <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-200">
+        <div class="text-base mb-1">💰</div>
+        <div class="font-bold text-amber-900">Ahorro Total</div>
+        <p class="text-[11px] text-amber-800 mt-0.5">Evita pagar $60-$80 en citas privadas de cauterización o cirugías menores.</p>
+      </div>
+      <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+        <div class="text-base mb-1">🍂</div>
+        <div class="font-bold text-brandNavy">Caída en 7 a 14 Días</div>
+        <p class="text-[11px] text-slate-500 mt-0.5">Se encoge, se seca y se desprende sola durante el baño sin sangrar.</p>
+      </div>
+    </div>
+
+    <!-- MODO DE USO RESALTADO (SIMPLE EN 3 PASOS) -->
+    <div class="mb-6 bg-slate-50 rounded-2xl p-4 border border-slate-200">
+      <h3 class="text-sm font-bold text-brandNavy mb-3 text-center uppercase tracking-wider">Modo de Uso Sencillo en Casa</h3>
+      <div class="space-y-2 text-xs">
+        <div class="flex items-center gap-3 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+          <div class="w-6 h-6 rounded-full bg-brandGreen text-white font-bold flex items-center justify-center flex-shrink-0 text-[11px]">1</div>
+          <div><strong>Lava y Seca:</strong> Limpia el área del cuello o cuerpo con agua tibia y seca suavemente.</div>
+        </div>
+        <div class="flex items-center gap-3 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+          <div class="w-6 h-6 rounded-full bg-brandGreen text-white font-bold flex items-center justify-center flex-shrink-0 text-[11px]">2</div>
+          <div><strong>Aplica 1 Gota:</strong> Con el gotero, deposita una gota sobre la marca. Deja absorber 2 minutos.</div>
+        </div>
+        <div class="flex items-center gap-3 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm">
+          <div class="w-6 h-6 rounded-full bg-brandGreen text-white font-bold flex items-center justify-center flex-shrink-0 text-[11px]">3</div>
+          <div><strong>2 Veces al Día:</strong> Repite en la mañana y noche. Notarás cómo se seca hasta desprenderse.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTÓN FINAL INFERIOR (SIN EMOJI DE CAJA COMO PIDIÓ EL USUARIO) -->
+    <div class="text-center pt-2 pb-7">
+      <button onclick="openModal()" class="btn-green-gold-border w-full font-extrabold text-sm sm:text-base py-4 rounded-xl transition-all flex items-center justify-center">
+        <span>SOLICITAR TRATAMIENTO CON PAGO EN MANO</span>
+      </button>
+      <p class="text-[11px] text-slate-500 font-medium mt-3.5">
+        🚚 Despacho asegurado por Valija Nacional Tealca (48 - 72 hrs hábiles)
+      </p>
+    </div>
+
+    <!-- SECCIÓN DE BLINDAJE LEGAL Y PROTECCIÓN AL COMPRADOR (POLÍTICAS) -->
+    <section class="mt-4 pt-6 border-t border-slate-200 text-xs text-slate-600">
+      
+      <div class="text-center mb-4">
+        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Transparencia y Seguridad</span>
+        <h4 class="font-serif font-bold text-base text-brandNavy">Garantía y Condiciones de Despacho</h4>
+      </div>
+
+      <div class="space-y-2.5">
+        
+        <!-- Política de Envíos y Tiempos -->
+        <details class="bg-slate-50 p-3 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+            <span>📦 Tiempos de Entrega (Valija Tealca)</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+            Todos los despachos se procesan desde la Megabodega Dropanas en Caracas a través del servicio nacional de Valijas Tealca. El tiempo promedio de recepción en taquilla o domicilio es de <strong>48 a 72 horas hábiles</strong> tras la confirmación de la guía por WhatsApp.
+          </p>
+        </details>
+
+        <!-- Política de Garantía y Devolución -->
+        <details class="bg-slate-50 p-3 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+            <span>🛡️ Garantía de Transporte y Reemplazo</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+            Garantizamos que tu producto llegue en perfecto estado. Si el frasco sufre alguna rotura durante el traslado por valija, dispones de <strong>48 horas tras el retiro</strong> para notificar a nuestro número de atención al cliente con foto del paquete y se despachará un reemplazo sin costo adicional. Por normativas de bioseguridad e higiene dérmica, no se aceptan devoluciones de envases abiertos o manipulados.
+          </p>
+        </details>
+
+        <!-- Política de Privacidad de Datos -->
+        <details class="bg-slate-50 p-3 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+            <span>🔒 Privacidad y Protección de Datos</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+            Tus datos de contacto (nombre, número telefónico y dirección) son utilizados estrictamente para la coordinación logística de entrega y la emisión de tu guía de despacho. No comercializamos ni transferimos tu información a terceros bajo ninguna circunstancia.
+          </p>
+        </details>
+
+        <!-- Aviso Dermatológico -->
+        <details class="bg-slate-50 p-3 rounded-xl border border-slate-200 group">
+          <summary class="font-bold text-slate-800 cursor-pointer flex justify-between items-center">
+            <span>🌿 Aviso de Uso Dermatológico</span>
+            <span class="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="text-[11px] text-slate-600 mt-2 leading-relaxed">
+            Producto de uso cosmético y tópico externo exclusivamente. Aplicar puntualmente con el gotero según las instrucciones del empaque. No ingerir, mantener fuera del alcance de niños y evitar el contacto con mucosas oculares.
+          </p>
+        </details>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- MODAL CHECKOUT POP-UP DIRECTO -->
+  <div id="checkout-modal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-end sm:items-center justify-center p-0 sm:p-4">
+    
+    <div class="bg-white rounded-t-3xl sm:rounded-3xl max-w-md w-full max-h-[92vh] overflow-y-auto p-5 sm:p-6 shadow-2xl relative text-xs animate-in fade-in slide-in-from-bottom duration-200">
+      
+      <!-- BOTÓN CERRAR -->
+      <button onclick="closeModal()" class="absolute right-4 top-4 w-7 h-7 rounded-full bg-slate-100 text-slate-600 font-bold flex items-center justify-center hover:bg-slate-200 text-sm">
+        ✕
+      </button>
+
+      <!-- ENCABEZADO DEL MODAL -->
+      <div class="mb-3 pr-6">
+        <span class="text-[10px] font-bold text-emerald-700 uppercase tracking-wider block">ENVÍO 100% GRATIS · VALIJA TEALCA</span>
+        <h3 class="font-serif font-bold text-xl text-brandNavy leading-tight">Completa tu Pedido Contra Entrega</h3>
+        <p class="text-[11px] text-slate-500 mt-0.5">Llega en 48 a 72 horas. Pagas al tenerlo en tus manos.</p>
+      </div>
+
+      <!-- BANNER INTERNO: AHORA NO PAGAS NADA -->
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-2.5 mb-4 text-[11px] text-emerald-950 flex items-start gap-2">
+        <span class="text-sm">🛡️</span>
+        <div>
+          <strong class="font-bold text-emerald-800">¡Ahora no pagas nada!</strong>
+          <span class="block text-emerald-900">Te contactaremos por WhatsApp para validar tus datos antes de enviar.</span>
+        </div>
+      </div>
+
+      <!-- PASO 1: SELECCIONA CUÁNTOS FRASCOS -->
+      <div class="mb-4">
+        <label class="block font-bold text-slate-800 mb-1.5 uppercase text-[10px] tracking-wider">
+          Paso 1: Elige tu Tratamiento
+        </label>
+        
+        <div class="space-y-2">
+          
+          <!-- PACK 2 FRASCOS (DEFAULT SELECCIONADO) -->
+          <div id="pack-card-2" onclick="selectPack('2')" class="cursor-pointer p-3 rounded-xl border-2 border-emerald-600 bg-emerald-50/60 shadow-sm transition-all flex items-center justify-between relative ring-1 ring-emerald-500/20">
+            <span id="badge-pack-2" class="absolute -top-2 right-3 bg-brandGreen text-white text-[9px] font-extrabold px-2 py-0.5 rounded-full shadow">
+              ★ MÁS ELEGIDO (60 DÍAS)
+            </span>
+            <div>
+              <strong class="font-bold text-brandNavy block text-xs">2 Frascos (60ml) · Cuello y Cuerpo</strong>
+              <span class="text-[10px] text-slate-500">Tratamiento completo en pareja o familiar</span>
+            </div>
+            <div class="text-right flex-shrink-0 ml-2">
+              <span class="font-serif font-bold text-brandNavy block text-sm leading-none">$44.99 USD</span>
+              <span class="text-[10px] font-bold text-emerald-700 block mt-0.5">Bs <span id="pack2-bs">41,013.78</span></span>
+            </div>
+          </div>
+
+          <!-- PACK 1 FRASCO -->
+          <div id="pack-card-1" onclick="selectPack('1')" class="cursor-pointer p-3 rounded-xl border border-slate-200 bg-white opacity-70 hover:opacity-100 transition-all flex items-center justify-between">
+            <div>
+              <strong class="font-bold text-slate-800 block text-xs">1 Frasco (30ml) · Tratamiento Inicial</strong>
+              <span class="text-[10px] text-slate-500">Para 1 a 3 marcas localizadas</span>
+            </div>
+            <div class="text-right flex-shrink-0 ml-2">
+              <span class="font-serif font-bold text-slate-800 block text-sm leading-none">$29.99 USD</span>
+              <span class="text-[10px] font-semibold text-emerald-700 block mt-0.5">Bs <span id="pack1-bs">27,339.61</span></span>
+            </div>
+          </div>
+
+          <!-- PACK 3 FRASCOS -->
+          <div id="pack-card-3" onclick="selectPack('3')" class="cursor-pointer p-3 rounded-xl border border-slate-200 bg-white opacity-70 hover:opacity-100 transition-all flex items-center justify-between">
+            <div>
+              <strong class="font-bold text-slate-800 block text-xs">3 Frascos (90ml) · Pack Familiar</strong>
+              <span class="text-[10px] text-slate-500">3er frasco a mitad de precio · Cero recaídas</span>
+            </div>
+            <div class="text-right flex-shrink-0 ml-2">
+              <span class="font-serif font-bold text-slate-800 block text-sm leading-none">$59.99 USD</span>
+              <span class="text-[10px] font-semibold text-emerald-700 block mt-0.5">Bs <span id="pack3-bs">54,688.08</span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PASO 2: DATOS DEL CLIENTE -->
+      <form id="modal-order-form" onsubmit="handleFormSubmit(event)" class="space-y-3">
+        
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Nombre y Apellido *</label>
+          <input type="text" id="modal_name" required placeholder="Ej. Carlos Mendoza" class="w-full px-3 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-slate-50/60 focus:bg-white text-xs">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Número de WhatsApp *</label>
+          <input type="tel" id="modal_phone" required placeholder="Ej. 0414-1234567" class="w-full px-3 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-slate-50/60 focus:bg-white text-xs">
+        </div>
+
+        <!-- SELECTORES CASCADA: ESTADO Y CIUDAD -->
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Estado *</label>
+            <select id="modal_state" required onchange="onStateSelectChange()" class="w-full px-2 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-slate-50/60 focus:bg-white text-xs">
+              <option value="">Seleccionar</option>
+              <option value="Distrito Capital">Distrito Capital</option>
+              <option value="Miranda">Miranda</option>
+              <option value="Carabobo">Carabobo</option>
+              <option value="Aragua">Aragua</option>
+              <option value="Zulia">Zulia</option>
+              <option value="Lara">Lara</option>
+              <option value="Anzoátegui">Anzoátegui</option>
+              <option value="Bolívar">Bolívar</option>
+              <option value="Táchira">Táchira</option>
+              <option value="Falcón">Falcón</option>
+              <option value="Mérida">Mérida</option>
+              <option value="Monagas">Monagas</option>
+              <option value="Nueva Esparta">Nueva Esparta</option>
+              <option value="Portuguesa">Portuguesa</option>
+              <option value="Sucre">Sucre</option>
+              <option value="Trujillo">Trujillo</option>
+              <option value="Yaracuy">Yaracuy</option>
+              <option value="Barinas">Barinas</option>
+              <option value="Guárico">Guárico</option>
+              <option value="Cojedes">Cojedes</option>
+              <option value="Apure">Apure</option>
+              <option value="La Guaira (Vargas)">La Guaira (Vargas)</option>
+              <option value="Delta Amacuro">Delta Amacuro</option>
+              <option value="Amazonas">Amazonas</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Ciudad / Zona *</label>
+            <select id="modal_city" required onchange="onCitySelectChange()" class="w-full px-2 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-slate-50/60 focus:bg-white text-xs">
+              <option value="">Elige tu Estado</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- INPUT CONDICIONAL: SI SELECCIONA OTRA CIUDAD -->
+        <div id="custom-city-container" class="hidden">
+          <label class="block font-semibold text-slate-700 mb-1 text-[11px]">Indica el nombre de tu Ciudad o Poblado *</label>
+          <input type="text" id="modal_city_custom" placeholder="Ej. Chivacoa / Biscucuy / San Joaquín" class="w-full px-3 py-2 rounded-xl border border-amber-300 focus:border-brandGreen outline-none bg-amber-50/40 focus:bg-white text-xs">
+        </div>
+
+        <!-- SEDE DE TEALCA (OPCIONAL) -->
+        <div class="bg-slate-50/90 p-2.5 rounded-xl border border-slate-200">
+          <div class="flex items-center justify-between mb-1">
+            <label class="block font-semibold text-slate-800 text-[11px] flex items-center gap-1">
+              <span>🏢 Sede Tealca de Retiro</span>
+              <span class="text-[9px] font-bold text-slate-500 bg-slate-200 px-1.5 py-0.2 rounded-full">OPCIONAL</span>
+            </label>
+            <span class="text-[10px] text-emerald-700 font-bold">Taquilla oficial</span>
+          </div>
+          <select id="modal_tealca" class="w-full px-2 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-white text-xs">
+            <option value="">-- Elige Estado y Ciudad para ver sedes --</option>
+          </select>
+          <p class="text-[10px] text-slate-400 mt-1 leading-tight">
+            💡 <em>Opcional:</em> Si no sabes cuál te queda cerca o no hay en tu localidad, déjalo sin seleccionar. Te ayudaremos a ubicarla por WhatsApp.
+          </p>
+        </div>
+
+        <!-- DIRECCIÓN EXACTA (OBLIGATORIA) -->
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="block font-semibold text-slate-700 text-[11px]">Dirección exacta (Calle, Casa/Edif, Referencia) *</label>
+            <span class="text-[9px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.2 rounded-full border border-emerald-200">OBLIGATORIA</span>
+          </div>
+          <input type="text" id="modal_address" required placeholder="Ej. Calle 4 con Av. Bolívar, Edif. Centro, Apto 3B (frente al Farmatodo)" class="w-full px-3 py-2 rounded-xl border border-slate-300 focus:border-brandGreen outline-none bg-slate-50/60 focus:bg-white text-xs">
+          <p class="text-[10px] text-slate-500 mt-1 leading-tight">
+            📍 Necesaria para validar tu entrega o en caso de requerir despacho alternativo por Zoom / MRW si no tienes sede Tealca cercana.
+          </p>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">¿Cómo pagarás al recibir? *</label>
+          <div class="grid grid-cols-2 gap-2">
+            <label class="flex items-center gap-1.5 p-2 rounded-xl border border-slate-300 bg-white cursor-pointer hover:border-brandGreen">
+              <input type="radio" name="modal_payment" value="Efectivo USD" checked class="text-brandGreen">
+              <span class="text-[11px] font-medium text-slate-800">💵 Dólares Efectivo</span>
+            </label>
+            <label class="flex items-center gap-1.5 p-2 rounded-xl border border-slate-300 bg-white cursor-pointer hover:border-brandGreen">
+              <input type="radio" name="modal_payment" value="Pago Móvil (BCV)" class="text-brandGreen">
+              <span class="text-[11px] font-medium text-slate-800">📲 Pago Móvil BCV</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- RESUMEN FINAL DE COMPRA -->
+        <div class="bg-slate-100/90 p-2.5 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
+          <div>
+            <span class="text-slate-500 block text-[10px]">Total a pagar al recibir:</span>
+            <strong class="text-brandNavy font-serif text-base" id="modal-summary-usd">$44.99 USD</strong>
+          </div>
+          <div class="text-right">
+            <span class="text-emerald-700 font-bold block" id="modal-summary-bs">Bs 41,013.78</span>
+            <span class="text-[10px] text-slate-400">Envío Gratis incluido</span>
+          </div>
+        </div>
+
+        <!-- BOTÓN DE CONFIRMACIÓN: DISPARA WHATSAPP -->
+        <button type="submit" class="btn-green-gold-border w-full font-extrabold text-sm py-3.5 rounded-xl transition-all flex items-center justify-center gap-2">
+          <span>CONFIRMAR Y ENVIAR POR WHATSAPP</span>
+          <span>📲</span>
+        </button>
+
+        <p class="text-[10px] text-center text-slate-500 font-medium leading-tight">
+          📦 Te abrirá WhatsApp con el pedido listo para preparar tu guía Tealca de inmediato.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- PANTALLA DE CONFIRMACIÓN POST-ENVÍO (FALLBACK) -->
+  <div id="post-modal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl">
+      <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto text-xl font-bold mb-3">
+        ✓
+      </div>
+      <h3 class="font-serif font-bold text-xl text-brandNavy mb-1">¡Pedido Registrado con Éxito!</h3>
+      <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+        Si no se abrió WhatsApp automáticamente, haz clic en el botón de abajo para despachar tu paquete hoy mismo.
+      </p>
+      
+      <a id="btn-manual-wa" href="#" target="_blank" class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl text-xs mb-3 shadow transition-all">
+        CONTINUAR AL WHATSAPP 📲
+      </a>
+
+      <button onclick="closePostModal()" class="text-xs text-slate-400 hover:text-slate-600 font-medium">
+        Cerrar ventana
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-brandNavy text-white py-6 px-4 text-center text-xs border-t border-slate-800">
+    <div class="font-serif font-bold tracking-wider mb-1">REMOVEDOR DE VERRUGAS VENEZUELA</div>
+    <p class="text-[11px] text-slate-400 max-w-xs mx-auto">
+      Distribución oficial autorizada Megabodega Dropanas Caracas. Entrega nacional por Valija Tealca en 48 a 72 horas.
+    </p>
+  </footer>
+
+  <!-- SCRIPT COMPLETO CON CONTROL DE SELECCIÓN Y DÓLAR API -->
+  <script>
+    // Configuración Base
+    let bcvRate = 911.6243;
+    const WHATSAPP_NUMBER = "584241319307";
+
+    const PACKS = {
+      '1': { title: '1 Frasco (30ml) · Tratamiento Inicial', usd: 29.99 },
+      '2': { title: '2 Frascos (60ml) · Tratamiento Completo (Más Elegido)', usd: 44.99 },
+      '3': { title: '3 Frascos (90ml) · Pack Familiar', usd: 59.99 }
+    };
+
+    let selectedPackKey = '2';
+
+    // 1. Consulta en Vivo a DolarAPI Oficial
+    async function fetchLiveBcvRate() {
+      try {
+        const res = await fetch('https://ve.dolarapi.com/v1/dolares/oficial');
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.promedio) {
+            bcvRate = parseFloat(data.promedio);
+            updateAllPrices();
+          }
+        }
+      } catch (err) {
+        console.warn('Usando tasa fallback BCV:', bcvRate);
+      }
+    }
+
+    function formatBs(val) {
+      return val.toLocaleString('es-VE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function updateAllPrices() {
+      document.getElementById('pack1-bs').textContent = formatBs(PACKS['1'].usd * bcvRate);
+      document.getElementById('pack2-bs').textContent = formatBs(PACKS['2'].usd * bcvRate);
+      document.getElementById('pack3-bs').textContent = formatBs(PACKS['3'].usd * bcvRate);
+
+      const cur = PACKS[selectedPackKey];
+      document.getElementById('modal-summary-usd').textContent = `$${cur.usd.toFixed(2)} USD`;
+      document.getElementById('modal-summary-bs').textContent = `Bs ${formatBs(cur.usd * bcvRate)}`;
+    }
+
+    // 2. Selección Exclusiva de Packs en el Modal (Bug Resuelto)
+    function selectPack(key) {
+      selectedPackKey = key;
+
+      ['1', '2', '3'].forEach(k => {
+        const card = document.getElementById(`pack-card-${k}`);
+        if (!card) return;
+
+        if (k === key) {
+          card.className = "cursor-pointer p-3 rounded-xl border-2 border-emerald-600 bg-emerald-50/60 shadow-sm transition-all flex items-center justify-between relative ring-1 ring-emerald-500/20";
+        } else {
+          card.className = "cursor-pointer p-3 rounded-xl border border-slate-200 bg-white opacity-70 hover:opacity-100 transition-all flex items-center justify-between";
+        }
+      });
+
+      updateAllPrices();
+    }
+
+    // 3. Control del Modal Pop-Up
+    function openModal() {
+      document.getElementById('checkout-modal').classList.remove('hidden');
+      selectPack(selectedPackKey);
+      updateAllPrices();
+    }
+
+    function closeModal() {
+      document.getElementById('checkout-modal').classList.add('hidden');
+    }
+
+    function closePostModal() {
+      document.getElementById('post-modal').classList.add('hidden');
+    }
+
+    // 4. Carrusel con Orden Exacto y Deslizamiento Táctil (Touch Swipe)
+    const galleryImages = [
+      'images/producto_gotero_vertical.jpg', // 1ra
+      'images/gotero_primer_plano.jpg',       // 2da
+      'images/caja_3d.jpg',                  // 3ra
+      'images/frasco_aislado.jpg',           // 4ta
+      'images/producto_set_blanco.jpg',      // 5ta (penúltima)
+      'images/ingredientes_naturales.jpg'    // 6ta (última)
+    ];
+    let currentSlide = 0;
+
+    function initDots() {
+      const container = document.getElementById('dots-container');
+      container.innerHTML = '';
+      galleryImages.forEach((_, idx) => {
+        const dot = document.createElement('span');
+        dot.className = `w-2 h-2 rounded-full transition-all ${idx === 0 ? 'bg-brandGreen w-4' : 'bg-slate-300'}`;
+        container.appendChild(dot);
+      });
+    }
+
+    function setSlide(idx) {
+      currentSlide = idx;
+      document.getElementById('main-product-img').src = galleryImages[currentSlide];
+      
+      const thumbs = document.querySelectorAll('.thumb-img');
+      thumbs.forEach((th, i) => {
+        if (i === idx) {
+          th.classList.remove('opacity-60', 'border-slate-200');
+          th.classList.add('border-2', 'border-brandGreen', 'opacity-100');
+        } else {
+          th.classList.remove('border-2', 'border-brandGreen', 'opacity-100');
+          th.classList.add('border', 'border-slate-200', 'opacity-60');
+        }
+      });
+
+      const dots = document.querySelectorAll('#dots-container span');
+      dots.forEach((dot, i) => {
+        if (i === idx) {
+          dot.className = 'w-4 h-2 rounded-full bg-brandGreen transition-all';
+        } else {
+          dot.className = 'w-2 h-2 rounded-full bg-slate-300 transition-all';
+        }
+      });
+    }
+
+    function prevSlide() {
+      let next = currentSlide - 1;
+      if (next < 0) next = galleryImages.length - 1;
+      setSlide(next);
+    }
+
+    function nextSlide() {
+      let next = currentSlide + 1;
+      if (next >= galleryImages.length) next = 0;
+      setSlide(next);
+    }
+
+    // Touch Swipe Listener para móviles
+    const touchArea = document.getElementById('carousel-touch-area');
+    let startX = 0;
+    let endX = 0;
+
+    touchArea.addEventListener('touchstart', (e) => {
+      startX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    touchArea.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const threshold = 40;
+      if (startX - endX > threshold) {
+        nextSlide();
+      } else if (endX - startX > threshold) {
+        prevSlide();
+      }
+    }
+
+    // 5. Base Oficial Maestro de Sucursales Tealca (134 Sedes)
+    const TEALCA_MASTER = {"Distrito Capital": {"cities": ["Caracas", "El Junquito"], "offices": [{"code": "1114", "city": "Caracas", "name": "Boleíta", "tel": "0414.332.08.59"}, {"code": "1143", "city": "Caracas", "name": "Capitolio", "tel": ""}, {"code": "1125", "city": "Caracas", "name": "Catia", "tel": "0424.120.65.72"}, {"code": "1137B", "city": "Caracas", "name": "Ccct", "tel": ""}, {"code": "1142", "city": "Caracas", "name": "El Cafetal", "tel": "0414.250.17.83"}, {"code": "1128B", "city": "Caracas", "name": "El Cementerio", "tel": "0412.953.51.79"}, {"code": "1126", "city": "Caracas", "name": "El Paraíso", "tel": "0414.322.42.89"}, {"code": "1137", "city": "Caracas", "name": "El Rosal - Chacao", "tel": "0414.120.01.52"}, {"code": "1132", "city": "Caracas", "name": "Filas De Mariches", "tel": "0412.957.32.15"}, {"code": "1114C", "city": "Caracas", "name": "La California", "tel": "0424-332.08.59"}, {"code": "1128", "city": "Caracas", "name": "La Candelaria", "tel": "0412.955.01.90"}, {"code": "1128C", "city": "Caracas", "name": "La Candelaria C.c. Lord Center", "tel": "0424-959.99.96"}, {"code": "1110", "city": "Caracas", "name": "La Trinidad", "tel": ""}, {"code": "1131", "city": "Caracas", "name": "Los Caobos", "tel": "0414.319.53.22"}, {"code": "AA", "city": "Caracas", "name": "Los Chaguaramos", "tel": ""}, {"code": "1127", "city": "Caracas", "name": "Los Palos Grandes", "tel": "0414.338.08.62"}, {"code": "1114B", "city": "Caracas", "name": "Montecristo", "tel": "0414.332.08.59"}, {"code": "1133", "city": "Caracas", "name": "Prados Del Este", "tel": "0424.286.31.89"}, {"code": "EXPNN", "city": "Caracas", "name": "Quinta Crespo Internacional", "tel": ""}, {"code": "1102", "city": "Caracas", "name": "Sabana Grande", "tel": "0414.322.16.06"}, {"code": "1119", "city": "Caracas", "name": "San Martin", "tel": "0414-920-3007"}, {"code": "1102B", "city": "Caracas", "name": "Urbina", "tel": ""}, {"code": "1141", "city": "El Junquito", "name": "Junquito", "tel": ""}]}, "Miranda": {"cities": ["Caracas (Este - Chacao/Baruta/Sucre)", "Carrizal", "Charallave", "Cúa", "Guarenas", "Guatire", "Higuerote", "Los Teques", "Ocumare del Tuy", "San Antonio de los A", "San Antonio de los Altos", "Santa Teresa del Tuy"], "offices": [{"code": "1406", "city": "Carrizal", "name": "Carrizal", "tel": ""}, {"code": "1501", "city": "Charallave", "name": "Charallave", "tel": "0424.268.81.66"}, {"code": "1305", "city": "Guarenas", "name": "Guarenas", "tel": "0414.900.07.63"}, {"code": "1302", "city": "Guatire", "name": "Guatire", "tel": "0426.516.35.51"}, {"code": "1503", "city": "Higuerote", "name": "Higuerote", "tel": ""}, {"code": "1405B", "city": "Los Teques", "name": "Los Teques", "tel": "0412.939.94.96"}, {"code": "1405", "city": "San Antonio de los A", "name": "San Antonio De Los Altos", "tel": "0424.143.1191"}]}, "Carabobo": {"cities": ["Guacara", "Los Guayos", "Mariara", "Morón", "Naguanagua", "Puerto Cabello", "San Diego", "Tocuyito", "Valencia"], "offices": [{"code": "5214", "city": "Guacara", "name": "Guacara", "tel": "0412-269.69.19"}, {"code": "5209", "city": "Valencia", "name": "Naguanagua", "tel": ""}, {"code": "DD", "city": "Valencia", "name": "Oficina Comercial Valencia", "tel": ""}, {"code": "5210", "city": "Valencia", "name": "San Diego", "tel": "0412-033.49.31"}, {"code": "5211", "city": "Valencia", "name": "Tocuyito", "tel": "0426-546.80.92"}, {"code": "5201", "city": "Valencia", "name": "Valencia (av. Andrés Eloy Blanco)", "tel": ""}, {"code": "5207", "city": "Valencia", "name": "Valencia (distribuidor San Blas)", "tel": "0424-431.10.39"}, {"code": "5207B", "city": "Valencia", "name": "Valencia (plaza La Candelaria)", "tel": "0414-142.32.25"}, {"code": "5208", "city": "Valencia", "name": "Valencia (zona Industrial Norte)", "tel": "0424-403.91.66"}, {"code": "5206", "city": "Valencia", "name": "Valencia Sur (paseo Las Industrias)", "tel": "0414-414.81.87"}]}, "Aragua": {"cities": ["Cagua", "El Limón", "La Victoria", "Maracay", "Palo Negro", "Santa Cruz", "Turmero", "Villa de Cura"], "offices": [{"code": "5119B", "city": "El Limón", "name": "El Limon", "tel": ""}, {"code": "5115", "city": "Cagua", "name": "Cagua", "tel": "0412-439.17.44"}, {"code": "5118", "city": "La Victoria", "name": "La Victoria", "tel": "0424-346.86.75"}, {"code": "5122", "city": "Maracay", "name": "Las Delicias", "tel": ""}, {"code": "5113", "city": "Maracay", "name": "Maracay Este (av. Sucre)", "tel": ""}, {"code": "5119", "city": "Maracay", "name": "Maracay Oeste", "tel": ""}, {"code": "CC", "city": "Maracay", "name": "Oficina Comercial Maracay", "tel": ""}, {"code": "5113B", "city": "Maracay", "name": "Tealca Maracay Sector Santa Ana", "tel": "0412-257.1546"}, {"code": "5117", "city": "Turmero", "name": "La Morita", "tel": "0412-456.91.88"}, {"code": "5120", "city": "Turmero", "name": "Turmero", "tel": ""}]}, "Zulia": {"cities": ["Cabimas", "Ciudad Ojeda", "Machiques", "Maracaibo", "San Francisco", "Santa Bárbara del Zulia", "Villa del Rosario"], "offices": [{"code": "8307B", "city": "Santa Bárbara del Zulia", "name": "Santa Barbara Del Zulia", "tel": ""}, {"code": "8405", "city": "Cabimas", "name": "Cabimas", "tel": ""}, {"code": "8406", "city": "Ciudad Ojeda", "name": "Ciudad Ojeda", "tel": ""}, {"code": "8502", "city": "Maracaibo", "name": "Bella Vista 5 De Julio", "tel": ""}, {"code": "8502B", "city": "Maracaibo", "name": "Delicias 5 De Julio", "tel": ""}, {"code": "8511", "city": "Maracaibo", "name": "Dr. Portillo", "tel": ""}, {"code": "8511B", "city": "Maracaibo", "name": "Maracaibo Centro Cc Gran Bazar", "tel": ""}, {"code": "8513B", "city": "Maracaibo", "name": "Maracaibo Circunvalacion 2 Sur Oeste", "tel": "0414.607.91.92"}, {"code": "8513C", "city": "Maracaibo", "name": "Maracaibo Delicias Norte Centro Comercial El Pilar", "tel": ""}, {"code": "8514", "city": "Maracaibo", "name": "Maracaibo Norte", "tel": "0414.651.53.23"}, {"code": "8513", "city": "Maracaibo", "name": "Maracaibo Oeste - La Limpia", "tel": "0412.124.64.56"}, {"code": "8509B", "city": "Maracaibo", "name": "Maracaibo Sur (la Coromoto)", "tel": ""}, {"code": "8509", "city": "Maracaibo", "name": "Maracaibo Sur (san Francisco)", "tel": ""}, {"code": "BB", "city": "Maracaibo", "name": "Oficina Comercial Maracaibo - Cecilio Acosta", "tel": ""}, {"code": "8516", "city": "Villa del Rosario", "name": "Villa Del Rosario", "tel": ""}]}, "Lara": {"cities": ["Barquisimeto", "Cabudare", "Carora", "Duaca", "El Tocuyo", "Quíbor"], "offices": [{"code": "7918C", "city": "Barquisimeto", "name": "Barquisimeto Carrera 19", "tel": ""}, {"code": "7910", "city": "Barquisimeto", "name": "Barquisimeto Este", "tel": "0414-071.06.44"}, {"code": "7918", "city": "Barquisimeto", "name": "Barquisimeto Oeste", "tel": ""}, {"code": "7918B", "city": "Barquisimeto", "name": "Barquisimeto Oeste Av. Las Industrias", "tel": ""}, {"code": "7912", "city": "Barquisimeto", "name": "Barquisimeto Sur", "tel": ""}, {"code": "GG", "city": "Barquisimeto", "name": "Oficina Comercial Barquisimeto", "tel": ""}, {"code": "7915", "city": "Cabudare", "name": "Cabudare", "tel": ""}, {"code": "7916", "city": "Carora", "name": "Carora", "tel": ""}]}, "Anzoátegui": {"cities": ["Anaco", "Barcelona", "Cantaura", "El Tigre", "Lechería", "Pariaguán", "Puerto La Cruz"], "offices": [{"code": "2912", "city": "Anaco", "name": "Anaco", "tel": "0412.251.98.49"}, {"code": "2907", "city": "Barcelona", "name": "Barcelona", "tel": "0424.823.25.20"}, {"code": "2901", "city": "El Tigre", "name": "El Tigre", "tel": ""}, {"code": "2906", "city": "Lechería", "name": "Lechería", "tel": "0424.815.98.54"}, {"code": "2909", "city": "Puerto La Cruz", "name": "Puerto La Cruz", "tel": ""}, {"code": "2913", "city": "Puerto La Cruz", "name": "Puerto La Cruz Oeste", "tel": ""}]}, "Bolívar": {"cities": ["Ciudad Bolívar", "Puerto Ordaz", "San Félix", "Santa Elena de Uairén", "Tumeremo", "Unare", "Upata"], "offices": [{"code": "3211", "city": "Santa Elena de Uairén", "name": "Santa Elena De Uairen", "tel": ""}, {"code": "3104", "city": "Tumeremo", "name": "Tumeremo", "tel": ""}, {"code": "3210", "city": "Ciudad Bolívar", "name": "Ciudad Bolivar", "tel": ""}, {"code": "3205B", "city": "Puerto Ordaz", "name": "Puerto Ordaz Alta Vista", "tel": "0424.926.10.41"}, {"code": "3205", "city": "Puerto Ordaz", "name": "Puerto Ordaz Castillito", "tel": "0424.907.63.29"}, {"code": "3209", "city": "Puerto Ordaz", "name": "Ventuari", "tel": "0412.194.94.25"}, {"code": "3208", "city": "San Félix", "name": "San Félix (el Roble)", "tel": "0414.830.49.24"}, {"code": "3207", "city": "Unare", "name": "Unare", "tel": "0424.928.12.65"}, {"code": "3208B", "city": "Upata", "name": "Upata", "tel": "0414.872.57.39"}]}, "Táchira": {"cities": ["Capacho", "Colón", "La Fría", "La fria", "Rubio", "San Antonio del Tach", "San Antonio del Táchira", "San Cristobal", "San Cristóbal", "Tariba", "Táriba", "Ureña"], "offices": [{"code": "8517", "city": "Rubio", "name": "Rubio", "tel": ""}, {"code": "8115C", "city": "Capacho", "name": "Capacho", "tel": ""}, {"code": "8113", "city": "La fria", "name": "La Fria", "tel": "0412.061.2251"}, {"code": "8112B", "city": "San Antonio del Tach", "name": "San Antonio Del Tachira", "tel": ""}, {"code": "8112", "city": "San Cristobal", "name": "Paramillo", "tel": ""}, {"code": "8115", "city": "San Cristobal", "name": "San Cristobal", "tel": ""}, {"code": "8111", "city": "San Cristobal", "name": "San Cristóbal (barrio Obrero)", "tel": ""}, {"code": "8114", "city": "San Cristobal", "name": "San Cristóbal Sur", "tel": "0414.379.92.08"}, {"code": "8115B", "city": "Tariba", "name": "Tariba", "tel": ""}, {"code": "8107", "city": "Ureña", "name": "Ureña", "tel": ""}]}, "Falcón": {"cities": ["Chichiriviche", "Coro", "Dabajuro", "Punta Cardon", "Punta Cardón", "Punto Fijo", "Tucacas"], "offices": [{"code": "7609", "city": "Dabajuro", "name": "Dabajuro", "tel": ""}, {"code": "7607", "city": "Coro", "name": "Coro", "tel": ""}, {"code": "7608", "city": "Punta Cardon", "name": "Punto Fijo Las Virtudes Ciudad Comercial", "tel": ""}, {"code": "7607B", "city": "Punto Fijo", "name": "Punto Fijo Centro", "tel": ""}]}, "Mérida": {"cities": ["Caja Seca", "Ejido", "El Vigía", "Mérida", "Tovar"], "offices": [{"code": "8301B", "city": "Mérida", "name": "Merida", "tel": ""}, {"code": "8308", "city": "Mérida", "name": "Merida Norte", "tel": ""}, {"code": "8204C", "city": "Caja Seca", "name": "Caja Seca", "tel": ""}, {"code": "8307", "city": "El Vigía", "name": "El Vigía", "tel": ""}]}, "Monagas": {"cities": ["Caripe", "Maturín", "Punta de Mata"], "offices": [{"code": "3005", "city": "Maturín", "name": "Maturín Este (c.c. Juanico)", "tel": "0424.973.95.67"}, {"code": "RR", "city": "Maturín", "name": "Oficina Comercial Maturín", "tel": "0412-876.70.77"}, {"code": "3007", "city": "Maturín", "name": "Tipuro", "tel": ""}]}, "Nueva Esparta": {"cities": ["Juan Griego", "La Asuncion", "La Asunción", "Los Robles", "Los Robles / Pampatar", "Porlamar"], "offices": [{"code": "2706C", "city": "La Asuncion", "name": "Cocheima", "tel": ""}, {"code": "2706", "city": "Los Robles", "name": "Porlamar", "tel": "0424.827.57.82"}]}, "Portuguesa": {"cities": ["Acarigua", "Araure", "Guanare", "Turén"], "offices": [{"code": "5401B", "city": "Acarigua", "name": "Acarigua", "tel": "0412-056.60.00"}, {"code": "5401C", "city": "Acarigua", "name": "Acarigua Ii Mamanico", "tel": ""}, {"code": "7705", "city": "Guanare", "name": "Guanare", "tel": "0424.553.59.72"}]}, "Sucre": {"cities": ["Carupano", "Carúpano", "Cumana", "Cumaná", "Güiria"], "offices": [{"code": "2803", "city": "Carupano", "name": "Carupano", "tel": ""}, {"code": "2804", "city": "Cumana", "name": "Cumana Santa Rosa", "tel": ""}, {"code": "2802", "city": "Cumana", "name": "Cumaná", "tel": "0414.084.01.03"}]}, "Trujillo": {"cities": ["Boconó", "Sabana de Mendoza", "Trujillo", "Valera"], "offices": [{"code": "8204", "city": "Valera", "name": "Valera", "tel": ""}, {"code": "8204B", "city": "Valera", "name": "Valera-Centro", "tel": ""}]}, "Yaracuy": {"cities": ["Chivacoa", "Nirgua", "San Felipe", "Yaritagua"], "offices": [{"code": "7802", "city": "San Felipe", "name": "San Felipe", "tel": ""}]}, "Barinas": {"cities": ["Alto Barinas", "Barinas", "Barinitas", "Santa Bárbara de Barinas", "Socopó"], "offices": [{"code": "8006", "city": "Barinas", "name": "Alto Barinas", "tel": ""}, {"code": "8006C", "city": "Barinas", "name": "Barinas Calle Cedeno", "tel": ""}, {"code": "8006B", "city": "Barinas", "name": "Barinas Centro Comercial Barinas", "tel": ""}, {"code": "8008", "city": "Barinas", "name": "Santa Barbara De Barinas", "tel": ""}, {"code": "8007", "city": "Barinitas", "name": "Barinitas", "tel": ""}]}, "Guárico": {"cities": ["Calabozo", "San Juan de los Morros", "Valle de La Pascua", "Zaraza"], "offices": [{"code": "J5121", "city": "San Juan de los Morros", "name": "San Juan De Los Morros - Villa De Cura", "tel": ""}, {"code": "5501", "city": "Calabozo", "name": "Calabozo", "tel": ""}, {"code": "5303", "city": "Valle de La Pascua", "name": "Valle De La Pascua", "tel": "0412-293.09.99"}]}, "Cojedes": {"cities": ["San Carlos", "Tinaquillo"], "offices": [{"code": "5402", "city": "San Carlos", "name": "San Carlos", "tel": ""}, {"code": "5403", "city": "Tinaquillo", "name": "Tinaquillo", "tel": ""}]}, "Apure": {"cities": ["Achaguas", "Guasdualito", "San Fernando de Apure"], "offices": [{"code": "5601", "city": "Guasdualito", "name": "Guasdualito", "tel": ""}, {"code": "5602", "city": "San Fernando de Apure", "name": "San Fernando De Apure", "tel": ""}]}, "La Guaira (Vargas)": {"cities": ["Caraballeda", "Catia La Mar", "La Guaira", "Maiquetia", "Maiquetía"], "offices": [{"code": "1234", "city": "Maiquetia", "name": "Maiquetia", "tel": ""}]}, "Delta Amacuro": {"cities": ["Tucupita"], "offices": [{"code": "3300", "city": "Tucupita", "name": "Tucupita", "tel": "0426.905.20.88"}]}, "Amazonas": {"cities": ["Puerto Ayacucho"], "offices": []}};
+
+    function onStateSelectChange() {
+      const st = document.getElementById('modal_state').value;
+      const citySelect = document.getElementById('modal_city');
+      const customCityContainer = document.getElementById('custom-city-container');
+      const customCityInput = document.getElementById('modal_city_custom');
+
+      citySelect.innerHTML = '';
+      customCityContainer.classList.add('hidden');
+      customCityInput.required = false;
+      customCityInput.value = '';
+
+      if (!st || !TEALCA_MASTER[st]) {
+        citySelect.innerHTML = '<option value="">Elige tu Estado primero</option>';
+        updateTealcaOffices();
+        return;
+      }
+
+      const cities = TEALCA_MASTER[st].cities || [];
+      citySelect.innerHTML = '<option value="">-- Selecciona tu Ciudad / Municipio --</option>';
+
+      cities.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        citySelect.appendChild(opt);
+      });
+
+      // Opción Otra Ciudad
+      const otherOpt = document.createElement('option');
+      otherOpt.value = '__OTRA__';
+      otherOpt.textContent = '➕ Otra ciudad o poblado...';
+      citySelect.appendChild(otherOpt);
+
+      updateTealcaOffices();
+    }
+
+    function onCitySelectChange() {
+      const city = document.getElementById('modal_city').value;
+      const customCityContainer = document.getElementById('custom-city-container');
+      const customCityInput = document.getElementById('modal_city_custom');
+
+      if (city === '__OTRA__') {
+        customCityContainer.classList.remove('hidden');
+        customCityInput.required = true;
+        customCityInput.focus();
+      } else {
+        customCityContainer.classList.add('hidden');
+        customCityInput.required = false;
+      }
+
+      updateTealcaOffices();
+    }
+
+    function updateTealcaOffices() {
+      const st = document.getElementById('modal_state').value;
+      const city = document.getElementById('modal_city').value;
+      const tealcaSelect = document.getElementById('modal_tealca');
+
+      tealcaSelect.innerHTML = '';
+
+      if (!st || !TEALCA_MASTER[st]) {
+        tealcaSelect.innerHTML = '<option value="">-- Elige Estado y Ciudad para ver sedes --</option>';
+        return;
+      }
+
+      const allOffices = TEALCA_MASTER[st].offices || [];
+      const cleanCity = city.toLowerCase();
+
+      // Filtrar oficinas de esta ciudad o zona
+      let directMatches = [];
+      let otherOffices = [];
+
+      allOffices.forEach(o => {
+        const oCity = (o.city || '').toLowerCase();
+        const oName = (o.name || '').toLowerCase();
+
+        const isCaracas = (st === 'Distrito Capital' || cleanCity.includes('caracas') || cleanCity.includes('chacao') || cleanCity.includes('sucre') || cleanCity.includes('baruta'));
+
+        if (isCaracas && (oCity === 'caracas' || oCity === '' || st === 'Distrito Capital')) {
+          directMatches.push(o);
+        } else if (city !== '__OTRA__' && cleanCity && (oCity === cleanCity || oCity.includes(cleanCity) || cleanCity.includes(oCity) || oName.includes(cleanCity))) {
+          directMatches.push(o);
+        } else {
+          otherOffices.push(o);
+        }
+      });
+
+      // Opción predeterminada Opcional
+      const defaultOpt = document.createElement('option');
+      defaultOpt.value = '';
+      defaultOpt.textContent = '-- (Opcional) Selecciona tu sucursal Tealca si la conoces --';
+      tealcaSelect.appendChild(defaultOpt);
+
+      if (directMatches.length > 0) {
+        const groupDirect = document.createElement('optgroup');
+        groupDirect.label = `📍 Sedes Tealca en ${city === '__OTRA__' ? st : city}`;
+        directMatches.forEach(o => {
+          const opt = document.createElement('option');
+          opt.value = `[${o.code}] ${o.name}${o.city ? ' - ' + o.city : ''}`;
+          opt.textContent = `🏢 [${o.code}] ${o.name}`;
+          groupDirect.appendChild(opt);
+        });
+        tealcaSelect.appendChild(groupDirect);
+
+        if (otherOffices.length > 0) {
+          const groupOthers = document.createElement('optgroup');
+          groupOthers.label = `Otras sedes en el Estado ${st}`;
+          otherOffices.forEach(o => {
+            const opt = document.createElement('option');
+            opt.value = `[${o.code}] ${o.name}${o.city ? ' - ' + o.city : ''}`;
+            opt.textContent = `🏢 [${o.city || st}] [${o.code}] ${o.name}`;
+            groupOthers.appendChild(opt);
+          });
+          tealcaSelect.appendChild(groupOthers);
+        }
+      } else if (allOffices.length > 0) {
+        const groupAll = document.createElement('optgroup');
+        groupAll.label = `Sedes disponibles en Estado ${st}`;
+        allOffices.forEach(o => {
+          const opt = document.createElement('option');
+          opt.value = `[${o.code}] ${o.name}${o.city ? ' - ' + o.city : ''}`;
+          opt.textContent = `🏢 [${o.city || st}] [${o.code}] ${o.name}`;
+          groupAll.appendChild(opt);
+        });
+        tealcaSelect.appendChild(groupAll);
+      } else {
+        const noneOpt = document.createElement('option');
+        noneOpt.value = 'Sin sede Tealca en este estado';
+        noneOpt.textContent = '❌ Sin agencia Tealca en este estado (Se coordinará por Zoom/MRW)';
+        tealcaSelect.appendChild(noneOpt);
+      }
+
+      // Opción por defecto al final para no saber cuál queda cerca
+      const unknownOpt = document.createElement('option');
+      unknownOpt.value = 'No sé cuál me queda cerca / Por coordinar por WhatsApp';
+      unknownOpt.textContent = '❓ No sé cuál me queda cerca (Coordinar por WhatsApp)';
+      tealcaSelect.appendChild(unknownOpt);
+    }
+
+    // 6. Envío de Formulario y Redirección Directa a WhatsApp
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      
+      const pack = PACKS[selectedPackKey];
+      const totalUsd = pack.usd;
+      const totalBs = formatBs(totalUsd * bcvRate);
+      
+      const name = document.getElementById('modal_name').value.trim();
+      const phone = document.getElementById('modal_phone').value.trim();
+      const state = document.getElementById('modal_state').value;
+      
+      let city = document.getElementById('modal_city').value;
+      if (city === '__OTRA__') {
+        const customCity = document.getElementById('modal_city_custom').value.trim();
+        city = customCity ? customCity : 'Otra localidad';
+      }
+
+      const tealcaVal = document.getElementById('modal_tealca').value.trim();
+      const tealcaDisplay = tealcaVal ? tealcaVal : 'No indicada (Coordinar por WhatsApp)';
+
+      const address = document.getElementById('modal_address').value.trim();
+      const payment = document.querySelector('input[name="modal_payment"]:checked').value;
+
+      const waMessage = 
+`👋 ¡Hola! Quiero confirmar mi pedido del *Removedor de Verrugas*:
+
+📦 *Tratamiento:* ${pack.title}
+💰 *Total a pagar al recibir:* $${totalUsd.toFixed(2)} USD (Bs ${totalBs})
+💵 *Método de Pago:* ${payment}
+🚚 *Envío:* GRATIS (Valija Tealca 48-72h)
+
+👤 *Cliente:* ${name}
+📱 *Teléfono:* ${phone}
+📍 *Estado:* ${state}
+🏙️ *Ciudad:* ${city}
+🏢 *Sede Tealca:* ${tealcaDisplay}
+🏠 *Dirección Exacta:* ${address}
+
+Quedo a la espera de la confirmación del despacho. ¡Gracias!`;
+
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+      closeModal();
+      document.getElementById('btn-manual-wa').href = waUrl;
+      document.getElementById('post-modal').classList.remove('hidden');
+
+      window.open(waUrl, '_blank');
+    }
+
+    initDots();
+    setSlide(0);
+    fetchLiveBcvRate();
+  </script>
+
+</body>
+</html>

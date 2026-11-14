@@ -1,0 +1,25 @@
+# Archivos multimedia pesados (Videos originales de Drive)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.7z
+videos_drive/**/*.mp4
+!videos_drive/TRANSCRIPCIONES_VIDEOS_DRIVE.md
+
+# Archivos de entorno y temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+*.log
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
