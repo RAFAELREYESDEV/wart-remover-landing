@@ -1,0 +1,7 @@
+videos_drive
+videos_drive/
+*.mp4
+*.py
+*.md
+tealca_master.json
+.git
