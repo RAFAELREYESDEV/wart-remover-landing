@@ -6,6 +6,24 @@
   <title>Removedor de Verrugas y Lunares de Carne | Envío Gratis a Toda Venezuela</title>
   <meta name="description" content="Tratamiento líquido concentrado con fórmula natural para secar verrugas y lunares de carne del cuello y cuerpo. Paga al recibir en toda Venezuela.">
   
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1116187371333053');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1116187371333053&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Shopify DTC Standard (DM Sans + Playfair Display) -->
@@ -933,6 +951,16 @@
 Quedo a la espera de la confirmación del despacho. ¡Gracias!`;
 
       const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+      // Disparo de Evento de Conversión a Meta Pixel
+      if (typeof fbq === 'function') {
+        fbq('track', 'Purchase', {
+          value: totalUsd,
+          currency: 'USD',
+          content_name: pack.title,
+          content_type: 'product'
+        });
+      }
 
       closeModal();
       document.getElementById('btn-manual-wa').href = waUrl;
